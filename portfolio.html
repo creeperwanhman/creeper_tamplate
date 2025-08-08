@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bramuel barasa| Portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            line-height: 1.6;
+            color: #333;
+            background-color: peru;
+        }
+        header{
+            background: #222;
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            margin: 10px 15px;
+            align-items: center;
+            padding: 15px o;
+        }
+        nav ul{
+            display: flex;
+            list-style: none;
+        }
+        nav ul li{
+            margin-left: 20px;
+            text-decoration: none;
+            margin: 0 15px;
+            display: inline-block;
+        }
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+            display: inline-block;
+            border-radius: 5px;
+            padding: 10px 20px;
+            background-color: green;
+            font-weight: bold;
+            transition: .4s ease;
+        }
+        .nav ul li a:hover{
+            color: rgb(230, 107, 59);
+            background-color: coral;
+        }
+
+        section{
+            padding: 4rem 2rem;
+
+        }
+        #home{
+            background: #eee;
+            text-align: center;
+            padding: 6rem 2rem;
+
+        }
+        .project{
+            background-color: peru;
+            padding: 1rem;
+            margin: 1ren 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+        form input, form textarea{
+            margin-bottom: 1rem;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        form button{
+            padding: 10px;
+            background:#222;
+            color: peru;
+            border: none;
+            cursor: pointer;
+        }
+        footer{
+            text-align: center;
+            padding: 1rem;
+            background: #222;
+            color: white;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Bramuel Barasa</h1>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="Home">
+        <h2>Hello, I'm Bramuel Barasa</h2>
+        <p>A passionate web developer/ designer.</p>
+    </section>
+
+    <section id="About">
+        <h3>About me</h3>
+        <p>I am a fronted developer with a keen eye for design and detail. I love builting responsive and user-friendly websites.</p>
+    </section>
+
+    <section id="Projects">
+        <h4>Projects</h4>
+        <div class="project">
+            <h5>Project 1</h5>
+            <p>I built wedsites which i use it in my activities.</p>
+        </div>
+        <div class="project">
+            <h5>Project 2</h5>
+            <p>I like using my own developed website to work on my business tasks and i also use fiverr in my activities.</p>
+        </div>
+    </section>
+
+    <section id="Contact">
+        <h6><span>Contact me</span></h6>
+        <form action="submit">
+            <input type="text" placeholder="Your name" required />
+            <input type="email" placeholder="Your email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Bramuel Barasa. All rights reserved.</p>
+    </footer>
+</body>
+</html>
