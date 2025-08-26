@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bramuel Barasa - Connect With Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen">
+    <!-- Header Section -->
+    <div class="container mx-auto px-4 py-8">
+        <div class="text-center mb-12">
+            <div class="w-32 h-32 mx-auto mb-6 bg-white rounded-full flex items-center justify-center shadow-lg">
+                <span class="text-4xl font-bold text-purple-600">BB</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Bramuel Barasa</h1>
+            <p class="text-xl text-purple-100 mb-6">Let's Connect & Communicate</p>
+            <div class="pulse-animation inline-block">
+                <span class="bg-green-500 text-white px-6 py-2 rounded-full text-sm font-semibold">
+                    🟢 Available for Communication
+                </span>
+            </div>
+        </div>
+
+        <!-- Contact Cards Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            
+            <!-- Phone Card 1 -->
+            <div class="bg-white rounded-2xl p-6 shadow-xl card-hover">
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+                        <span class="text-2xl">📱</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Primary Phone</h3>
+                    <p class="text-gray-600 mb-4">Call or SMS</p>
+                    <a href="tel:‪+254719741661‬" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300 inline-block">
+                        📞 0719741661
+                    </a>
+                </div>
+            </div>
+
+            <!-- Phone Card 2 -->
+            <div class="bg-white rounded-2xl p-6 shadow-xl card-hover">
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
+                        <span class="text-2xl">☎</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Alternative Phone</h3>
+                    <p class="text-gray-600 mb-4">Backup Contact</p>
+                    <a href="tel:‪+254105904161‬" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300 inline-block">
+                        📞 0105904161
+                    </a>
+                </div>
+            </div>
+
+            <!-- WhatsApp Card -->
+            <div class="bg-white rounded-2xl p-6 shadow-xl card-hover">
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
+                        <span class="text-2xl">💬</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">WhatsApp</h3>
+                    <p class="text-gray-600 mb-4">Quick Messages</p>
+                    <a href="https://wa.me/254719741661" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300 inline-block">
+                        💬 Chat Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Facebook Card -->
+            <div class="bg-white rounded-2xl p-6 shadow-xl card-hover">
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+                        <span class="text-2xl">👤</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Facebook</h3>
+                    <p class="text-gray-600 mb-4">Social Connection</p>
+                    <a href="https://www.facebook.com/profile.php?id=" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300 inline-block">
+                        👤 Visit Profile
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Form Card -->
+            <div class="bg-white rounded-2xl p-6 shadow-xl card-hover md:col-span-2">
+                <div class="text-center mb-6">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-purple-100 rounded-full flex items-center justify-center">
+                        <span class="text-2xl">✉</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Send Me a Message</h3>
+                    <p class="text-gray-600">Leave your contact details and I'll get back to you</p>
+                </div>
+                
+                <form id="contactForm" class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <input type="text" id="name" placeholder="Your Name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                        <input type="tel" id="phone" placeholder="Your Phone Number" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                    </div>
+                    <textarea id="message" placeholder="Your Message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"></textarea>
+                    <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-semibold transition-colors duration-300">
+                        📤 Send Message
+                    </button>
+                </form>
+                
+                <div id="formMessage" class="mt-4 text-center hidden"></div>
+            </div>
+        </div>
+
+        <!-- Quick Actions Section -->
+        <div class="mt-12 text-center">
+            <h2 class="text-2xl font-bold text-white mb-6">Quick Actions</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="tel:+254719741661" class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 backdrop-blur-sm">
+                    📞 Call Now
+                </a>
+                <a href="sms:+254719741661" class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 backdrop-blur-sm">
+                    💬 Send SMS
+                </a>
+                <a href="https://wa.me/254719741661" target="_blank" class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 backdrop-blur-sm">
+                    📱 WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="mt-16 text-center text-purple-100">
+            <p class="mb-2">© 2024 Bramuel Barasa - Always Ready to Connect</p>
+            <p class="text-sm opacity-75">Available 24/7 for communication</p>
+        </div>
+    </div>
+
+    <!-- Contact Storage System -->
+    <script>
+        // Simple contact storage system using localStorage
+        class ContactManager {
+            constructor() {
+                this.contacts = this.loadContacts();
+            }
+
+            loadContacts() {
+                const stored = localStorage.getItem('bramuel_contacts');
+                return stored ? JSON.parse(stored) : [];
+            }
+
+            saveContacts() {
+                localStorage.setItem('bramuel_contacts', JSON.stringify(this.contacts));
+            }
+
+            addContact(contact) {
+                contact.id = Date.now();
+                contact.timestamp = new Date().toISOString();
+                this.contacts.push(contact);
+                this.saveContacts();
+                return contact.id;
+            }
+
+            getContacts() {
+                return this.contacts;
+            }
+        }
+
+        // Initialize contact manager
+        const contactManager = new ContactManager();
+
+        // Handle form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            // Save contact to local storage
+            const contactId = contactManager.addContact({
+                name: name,
+                phone: phone,
+                message: message
+            });
+            
+            // Show success message
+            const messageDiv = document.getElementById('formMessage');
+            messageDiv.className = 'mt-4 text-center bg-green-100 text-green-800 p-4 rounded-lg';
+            messageDiv.textContent = Thank you ${name}! Your message has been saved. I'll contact you soon at ${phone}.;
+            messageDiv.classList.remove('hidden');
+            
+            // Reset form
+            this.reset();
+            
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                messageDiv.classList.add('hidden');
+            }, 5000);
+        });
+
+        // Add click tracking for social media links
+        document.querySelectorAll('a[href*="facebook"], a[href*="wa.me"]').forEach(link => {
+            link.addEventListener('click', function() {
+                console.log('Social media link clicked:', this.href);
+            });
+        });
+
+        // Add phone call tracking
+        document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+            link.addEventListener('click', function() {
+                console.log('Phone call initiated:', this.href);
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'974db8a637093517',t:'MTc1NjE1MjUwNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bramuel Barasa - Social Media Communication Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-shadow { box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .demo-badge { 
+            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-6 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-2">Bramuel Barasa</h1>
+            <p class="text-lg opacity-90">Social Media Communication Hub</p>
+            <div class="mt-4 flex flex-col sm:flex-row justify-center items-center gap-4 text-sm">
+                <div class="flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                    </svg>
+                    <span>0719741661</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                    </svg>
+                    <span>0105904161</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Demo Notice -->
+    <div class="max-w-4xl mx-auto px-4 py-4">
+        <div class="demo-badge text-white px-4 py-2 rounded-lg text-center text-sm font-medium">
+            🚀 DEMO VERSION - Database features shown for demonstration purposes
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        <!-- Contact Form -->
+        <section class="bg-white rounded-xl card-shadow p-6 md:p-8 mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Get In Touch</h2>
+            <form id="contactForm" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Your Name</label>
+                        <input type="text" id="userName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                        <input type="email" id="userEmail" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                    <input type="tel" id="userPhone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Social Media Platform</label>
+                    <select id="platform" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all">
+                        <option value="">Select Platform</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="twitter">Twitter/X</option>
+                        <option value="linkedin">LinkedIn</option>
+                        <option value="tiktok">TikTok</option>
+                        <option value="whatsapp">WhatsApp</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                    <textarea id="message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all resize-none"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-3 px-6 rounded-lg font-medium hover:from-purple-700 hover:to-blue-700 transform hover:scale-105 transition-all duration-200">
+                    Send Message
+                </button>
+            </form>
+        </section>
+
+        <!-- Messages Dashboard -->
+        <section class="bg-white rounded-xl card-shadow p-6 md:p-8">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold text-gray-800">Messages Dashboard</h2>
+                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium" id="messageCount">3 Messages</span>
+            </div>
+            
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap gap-2 mb-6">
+                <button onclick="filterMessages('all')" class="filter-btn active px-4 py-2 rounded-lg text-sm font-medium bg-purple-600 text-white">All</button>
+                <button onclick="filterMessages('facebook')" class="filter-btn px-4 py-2 rounded-lg text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">Facebook</button>
+                <button onclick="filterMessages('instagram')" class="filter-btn px-4 py-2 rounded-lg text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">Instagram</button>
+                <button onclick="filterMessages('twitter')" class="filter-btn px-4 py-2 rounded-lg text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">Twitter</button>
+                <button onclick="filterMessages('linkedin')" class="filter-btn px-4 py-2 rounded-lg text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">LinkedIn</button>
+            </div>
+
+            <!-- Messages List -->
+            <div id="messagesList" class="space-y-4">
+                <!-- Sample messages for demo -->
+                <div class="message-item border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow" data-platform="facebook">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-medium">JD</div>
+                            <div>
+                                <h3 class="font-medium text-gray-800">John Doe</h3>
+                                <p class="text-sm text-gray-500">john.doe@email.com • Facebook</p>
+                            </div>
+                        </div>
+                        <span class="text-xs text-gray-400">2 hours ago</span>
+                    </div>
+                    <p class="text-gray-700 mb-3">Hi Bramuel! I'm interested in collaborating on a social media campaign. Could we schedule a call?</p>
+                    <div class="flex gap-2">
+                        <button class="px-3 py-1 bg-green-100 text-green-700 rounded text-sm hover:bg-green-200">Reply</button>
+                        <button class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm hover:bg-gray-200">Archive</button>
+                    </div>
+                </div>
+
+                <div class="message-item border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow" data-platform="instagram">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center text-white font-medium">SM</div>
+                            <div>
+                                <h3 class="font-medium text-gray-800">Sarah Miller</h3>
+                                <p class="text-sm text-gray-500">sarah.m@company.com • Instagram</p>
+                            </div>
+                        </div>
+                        <span class="text-xs text-gray-400">5 hours ago</span>
+                    </div>
+                    <p class="text-gray-700 mb-3">Love your content strategy! Would you be available for a consultation next week?</p>
+                    <div class="flex gap-2">
+                        <button class="px-3 py-1 bg-green-100 text-green-700 rounded text-sm hover:bg-green-200">Reply</button>
+                        <button class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm hover:bg-gray-200">Archive</button>
+                    </div>
+                </div>
+
+                <div class="message-item border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow" data-platform="linkedin">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center text-white font-medium">MJ</div>
+                            <div>
+                                <h3 class="font-medium text-gray-800">Michael Johnson</h3>
+                                <p class="text-sm text-gray-500">m.johnson@startup.com • LinkedIn</p>
+                            </div>
+                        </div>
+                        <span class="text-xs text-gray-400">1 day ago</span>
+                    </div>
+                    <p class="text-gray-700 mb-3">Hi Bramuel, I saw your profile and I'm impressed with your social media expertise. We're looking for someone to help with our brand presence.</p>
+                    <div class="flex gap-2">
+                        <button class="px-3 py-1 bg-green-100 text-green-700 rounded text-sm hover:bg-green-200">Reply</button>
+                        <button class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm hover:bg-gray-200">Archive</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-4 mt-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-xl font-bold mb-2">Bramuel Barasa</h3>
+            <p class="text-gray-300 mb-4">Professional Social Media Communication</p>
+            <div class="flex justify-center gap-6 text-sm">
+                <span>📞 0719741661</span>
+                <span>📞 0105904161</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                name: document.getElementById('userName').value,
+                email: document.getElementById('userEmail').value,
+                phone: document.getElementById('userPhone').value,
+                platform: document.getElementById('platform').value,
+                message: document.getElementById('message').value,
+                timestamp: new Date().toISOString()
+            };
+            
+            // Simulate database save (demo functionality)
+            console.log('Demo: Saving to database:', formData);
+            
+            // Add to messages list
+            addNewMessage(formData);
+            
+            // Show success message
+            alert('✅ Message sent successfully! (Demo: In a real implementation, this would be saved to your database)');
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Add new message to the dashboard
+        function addNewMessage(data) {
+            const messagesList = document.getElementById('messagesList');
+            const platformColors = {
+                facebook: 'bg-blue-500',
+                instagram: 'bg-pink-500',
+                twitter: 'bg-blue-400',
+                linkedin: 'bg-blue-700',
+                tiktok: 'bg-black',
+                whatsapp: 'bg-green-500',
+                other: 'bg-gray-500'
+            };
+            
+            const newMessage = document.createElement('div');
+            newMessage.className = 'message-item border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow';
+            newMessage.setAttribute('data-platform', data.platform);
+            
+            newMessage.innerHTML = `
+                <div class="flex justify-between items-start mb-2">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 ${platformColors[data.platform] || 'bg-gray-500'} rounded-full flex items-center justify-center text-white font-medium">
+                            ${data.name.charAt(0).toUpperCase()}
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-gray-800">${data.name}</h3>
+                            <p class="text-sm text-gray-500">${data.email} • ${data.platform.charAt(0).toUpperCase() + data.platform.slice(1)}</p>
+                        </div>
+                    </div>
+                    <span class="text-xs text-gray-400">Just now</span>
+                </div>
+                <p class="text-gray-700 mb-3">${data.message}</p>
+                <div class="flex gap-2">
+                    <button class="px-3 py-1 bg-green-100 text-green-700 rounded text-sm hover:bg-green-200">Reply</button>
+                    <button class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm hover:bg-gray-200">Archive</button>
+                </div>
+            `;
+            
+            messagesList.insertBefore(newMessage, messagesList.firstChild);
+            updateMessageCount();
+        }
+
+        // Filter messages by platform
+        function filterMessages(platform) {
+            const messages = document.querySelectorAll('.message-item');
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            
+            // Update button states
+            filterBtns.forEach(btn => {
+                btn.classList.remove('active', 'bg-purple-600', 'text-white');
+                btn.classList.add('bg-gray-200', 'text-gray-700');
+            });
+            
+            event.target.classList.add('active', 'bg-purple-600', 'text-white');
+            event.target.classList.remove('bg-gray-200', 'text-gray-700');
+            
+            // Filter messages
+            messages.forEach(message => {
+                if (platform === 'all' || message.getAttribute('data-platform') === platform) {
+                    message.style.display = 'block';
+                } else {
+                    message.style.display = 'none';
+                }
+            });
+        }
+
+        // Update message count
+        function updateMessageCount() {
+            const visibleMessages = document.querySelectorAll('.message-item[style="display: block"], .message-item:not([style])');
+            document.getElementById('messageCount').textContent = ${visibleMessages.length} Messages;
+        }
+
+        // Initialize message count
+        updateMessageCount();
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'974da914b0ecf48a',t:'MTc1NjE1MTg2Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
