@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Green Valley Hotel</title>
+  <style>
+    /* Responsive Gallery Grid */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      transition: transform 0.3s;
+      border-radius: 10px;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+    .caption {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      padding: 8px;
+      font-size: 14px;
+      text-align: center;
+      border-radius: 0 0 10px 10px;
+    }
+
+    /* Lightbox Modal */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+    .lightbox:target {
+      display: flex;
+    }
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      font-size: 30px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Gallery Section -->
+  <main>
+    <h1 style="text-align:center; margin:20px 0;">Our Gallery</h1>
+    <section class="gallery">
+      <!-- Image 1 -->
+      <a href="#img1" class="gallery-item">
+        <img src="img/training session.jpeg" alt="Training session">
+        <div class="caption">Training Session</div>
+      </a>
+      <a href="#img2" class="gallery-item">
+        <img src="img/workshop activity.jpeg" alt="Workshop activity">
+        <div class="caption">Workshop Activity</div>
+      </a>
+      <a href="#img3" class="gallery-item">
+        <img src="img/AdobeStock_346732539_Preview_Editorial_Use_Only.jpeg" alt="Modern facilities">
+        <div class="caption">Modern Facilities</div>
+      </a>
+      <a href="#img4" class="gallery-item">
+        <img src="img/outdoor event.jpeg" alt="Outdoor event">
+        <div class="caption">Outdoor Event</div>
+      </a>
+      <a href="#img5" class="gallery-item">
+        <img src="img/AdobeStock_401565931_Preview.jpeg" alt="Lecture session">
+        <div class="caption">Lecture Session</div>
+      </a>
+      <a href="#img6" class="gallery-item">
+        <img src="img/discussion.jpeg" alt="Group discussion">
+        <div class="caption">Group Discussion</div>
+      </a>
+      <a href="#img7" class="gallery-item">
+        <img src="img/dinning area.jpeg" alt="Dining area">
+        <div class="caption">Dining Area</div>
+      </a>
+      <a href="#img8" class="gallery-item">
+        <img src="img/AdobeStock_281053200_Preview.jpeg" alt="Celebration event">
+        <div class="caption">Celebration Event</div>
+      </a>
+    </section>
+  </main>
+
+  <!-- Lightbox Modals -->
+  <div id="img1" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/gallery1.jpg" alt="">
+  </div>
+  <div id="img2" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/gallery2.jpg" alt="">
+  </div>
+  <div id="img3" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/gallery3.jpg" alt="">
+  </div>
+  <div id="img4" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/gallery4.jpg" alt="">
+  </div>
+  <div id="img5" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/gallery5.jpg" alt="">
+  </div>
+  <div id="img6" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/gallery6.jpg" alt="">
+  </div>
+  <div id="img7" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/gallery7.jpg" alt="">
+  </div>
+  <div id="img8" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/gallery8.jpg" alt="">
+  </div>
+
+</body>
+</html>

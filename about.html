@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Green Valley Hotel</title>
+    <style>
+        /* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2e8b57;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar .logo {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    text-decoration: underline;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #f9f9f9;
+}
+.about h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Team Section */
+.team {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.team-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+}
+.team-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.team-card h3 {
+    margin: 0.5rem 0;
+}
+.team-card .position {
+    color: #2e8b57;
+    font-weight: bold;
+}
+
+/* Values Section */
+.values {
+    background: #f0fff0;
+    padding: 3rem 2rem;
+}
+.values ul {
+    list-style: none;
+    max-width: 700px;
+    margin: auto;
+    padding: 0;
+}
+.values ul li {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    background: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Green Valley Hotel</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Company Section -->
+    <section class="about">
+        <h1>About Us</h1>
+        <p>Green Valley Hotel was established in 2010 with the goal of offering a unique boutique hospitality experience. 
+        Our mission is to provide comfort, relaxation, and personalized services to every guest while promoting sustainability and eco-friendly practices.</p>
+    </section>
+
+    <!-- Our Team Section -->
+    <section class="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-container">
+            <div class="team-card">
+                <img src="img/CEO.jpeg" alt="CEO">
+                <h3>John Mwangi</h3>
+                <p class="position">Chief Executive Officer</p>
+                <p>With over 15 years of hospitality management experience, John leads with a passion for service excellence.</p>
+            </div>
+            <div class="team-card">
+                <img src="img/Manager.jpeg" alt="Manager">
+                <h3>Grace Achieng</h3>
+                <p class="position">Operations Manager</p>
+                <p>Grace ensures everything runs smoothly, from reservations to guest experiences.</p>
+            </div>
+            <div class="team-card">
+                <img src="img/Chef.jpeg" alt="Chef">
+                <h3>David Otieno</h3>
+                <p class="position">Head Chef</p>
+                <p>David specializes in fusion cuisine, bringing local and international flavors together.</p>
+            </div>
+            <div class="team-card">
+                <img src="img/Marketing.jpeg" alt="Marketing">
+                <h3>Sarah Wambui</h3>
+                <p class="position">Marketing Director</p>
+                <p>Sarah is responsible for building the Green Valley Hotel brand and ensuring global visibility.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values / Achievements Section -->
+    <section class="values">
+        <h2>Our Values & Achievements</h2>
+        <ul>
+            <li>🏆 Awarded "Best Boutique Hotel in Kenya" (2022)</li>
+            <li>🌱 Committed to eco-friendly and sustainable hospitality</li>
+            <li>🤝 Dedicated to exceptional customer service</li>
+            <li>🌍 Strong community involvement and support</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Green Valley Hotel. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

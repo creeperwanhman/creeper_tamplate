@@ -1,109 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bramuel Barasa | Portfolio</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    body {
-      background: #f5f5f5;
-      color: #333;
-    }
-    header {
-      background: #222;
-      color: white;
-      padding: 20px 50px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2rem;
-      margin-bottom: 5px;
-    }
-    header p {
-      font-size: 1rem;
-      color: #bbb;
-    }
-    nav {
-      background: #444;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #00aced;
-    }
-    section {
-      padding: 50px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    section h2 {
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-      color: #222;
-      text-align: center;
-    }
-    .about, .contact {
-      background: white;
-      border-radius: 10px;
-      padding: 30px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-    .contact-info {
-      list-style: none;
-      font-size: 1.1rem;
-    }
-    .contact-info li {
-      margin-bottom: 10px;
-    }
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 50px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Valley Hotel</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- You can add icons via Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-  <header>
-    <h1>Bramuel Barasa</h1>
-    <p>Web Designer & Graphic Designer</p>
-  </header>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Green Valley Hotel</h1>
+            <p>Your comfort, our priority</p>
+        </div>
+        <!-- Sticky Navigation Bar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Welcome to Green Valley Hotel</h2>
+        <p>Experience luxury and tranquility in the heart of nature.</p>
+        <a href="contact.html" class="btn">Book Now</a>
+    </section>
 
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>Hello! My name is <strong>Bramuel Barasa</strong>. I am a passionate web and graphic designer dedicated to creating visually appealing and user-friendly designs. I enjoy building modern websites and bringing creative ideas to life through design.</p>
-  </section>
+    <!-- Services Preview -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-items">
+            <div class="service">
+                <i class="fas fa-bed fa-2x"></i>
+                <h3>Accommodation</h3>
+                <p>Luxury rooms designed for your relaxation and comfort.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-utensils fa-2x"></i>
+                <h3>Dining</h3>
+                <p>Enjoy delicious meals from our world-class chefs.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-spa fa-2x"></i>
+                <h3>Spa & Wellness</h3>
+                <p>Relax, refresh, and rejuvenate with our spa services.</p>
+            </div>
+        </div>
+    </section>
 
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <ul class="contact-info">
-      <li><strong>Email:</strong> barasabramuel44@gmail.com</li>
-      <li><strong>Phone:</strong> 0719741661 / 0105904161</li>
-    </ul>
-  </section>
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>✔ Exceptional customer service and hospitality</li>
+            <li>✔ Affordable luxury in a serene environment</li>
+            <li>✔ Convenient location with breathtaking views</li>
+        </ul>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Bramuel Barasa. All rights reserved.</p>
-  </footer>
+    <!-- Call-to-Action -->
+    <section class="cta">
+        <h2>Ready to Experience Green Valley?</h2>
+        <p>Contact us today or book your stay with just one click.</p>
+        <a href="contact.html" class="btn">Get in Touch</a>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p><strong>Contact:</strong> +254 719 741 661 | info@greenvalleyhotel.com</p>
+            <p><strong>Quick Links:</strong> 
+                <a href="index.html">Home</a> | 
+                <a href="about.html">About</a> | 
+                <a href="services.html">Services</a> | 
+                <a href="gallery.html">Gallery</a> | 
+                <a href="contact.html">Contact</a>
+            </p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <p>&copy; 2025 Green Valley Hotel. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+});
+</script>
+
 
 </body>
 </html>
+
+
+

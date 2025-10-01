@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Green Valley Hotel</title>
+  <style>
+    /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
+  background: #004d40;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background: #00695c;
+}
+
+/* Page Title */
+.contact-page h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #004d40;
+}
+
+/* Contact Page Layout */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 20px 10%;
+}
+
+.contact-container section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Contact Form */
+.contact-form h2 {
+  margin-bottom: 15px;
+  color: #004d40;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+  border-color: #004d40;
+  box-shadow: 0 0 5px rgba(0,77,64,0.3);
+}
+
+button {
+  display: inline-block;
+  background: #004d40;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00695c;
+}
+
+/* Contact Info */
+.contact-info h2, .contact-info h3 {
+  color: #004d40;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+/* Business Hours Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+table th {
+  background: #004d40;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #004d40;
+  color: #fff;
+  margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Green Valley Hotel</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-page">
+    <h1>Contact Us</h1>
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <section class="contact-form">
+        <h2>Get in Touch</h2>
+        <form id="contactForm" action="process_contact.php" method="POST">
+
+  
+
+  
+
+
+        <form action="#" method="post">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="+254 700 000000" required>
+
+          <label for="service">Service Interested In:</label>
+          <select id="service" name="service">
+            <option value="accommodation">Accommodation</option>
+            <option value="dining">Dining</option>
+            <option value="conference">Conference Halls</option>
+            <option value="events">Events & Catering</option>
+          </select>
+
+          <label>Service Interested In:</label>
+            <select name="service_interest">
+            <option value="Web Development">Web Development</option>
+            <option value="Mobile Apps">Mobile Apps</option>
+            <option value="Graphic Design">Graphic Design</option>
+            <option value="Training">Training</option>
+        </select><br><br>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+
+      </section>
+
+      <!-- Contact Information -->
+      <section class="contact-info">
+        <h2>Our Contact Information</h2>
+        <p><strong>Address:</strong> Green Valley Hotel, Nairobi, Kenya</p>
+        <p><strong>Phone:</strong> +254 712 345 678</p>
+        <p><strong>Email:</strong> info@greenvalleyhotel.com</p>
+
+        <!-- Business Hours -->
+        <h3>Business Hours</h3>
+        <table border="1" cellpadding="5">
+          <tr>
+            <th>Day</th>
+            <th>Hours</th>
+          </tr>
+          <tr>
+            <td>Monday - Friday</td>
+            <td>8:00 AM - 9:00 PM</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>9:00 AM - 6:00 PM</td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td>Closed</td>
+          </tr>
+        </table>
+
+        <!-- Embedded Map -->
+        <h3>Our Location</h3>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.4021877283656!2d36.8219463!3d-1.2920659" 
+          width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Green Valley Hotel. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let phone = document.getElementById("phone").value.trim();
+    let message = document.getElementById("message").value.trim();
+
+    if (name === "" || email === "" || phone === "" || message === "") {
+        alert("Please fill in all required fields.");
+        event.preventDefault(); // prevent submission
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        alert("Enter a valid email address.");
+        event.preventDefault();
+    }
+});
+</script>
+
+</body>
+</html>

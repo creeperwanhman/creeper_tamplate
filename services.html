@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - Green Valley Hotel</title>
+  <style>
+    /* Page Header */
+.page-header {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("images/header-bg.jpg") no-repeat center/cover;
+  color: #fff;
+}
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.page-header p {
+  font-size: 1.1rem;
+}
+
+/* Services Section */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 60px 10%;
+  background: #f9f9f9;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.service-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.service-card h2 {
+  font-size: 1.4rem;
+  margin: 10px 0;
+  color: #2c3e50;
+}
+.service-card p {
+  font-size: 0.95rem;
+  margin: 8px 0;
+  color: #555;
+}
+.service-card strong {
+  color: #000;
+}
+
+/* Buttons */
+.service-card button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #27ae60;
+  color: #fff;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.service-card button:hover {
+  background: #219150;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Green Valley Hotel</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <h1>Our Services</h1>
+    <p>Explore our premium hotel and dining services crafted for your comfort.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <div class="service-card">
+      <img src="img/Luxury Rooms.jpeg" alt="Luxury Rooms">
+      <h2>Luxury Accommodation</h2>
+      <p>Enjoy our fully furnished deluxe rooms with scenic views and modern amenities for a comfortable stay.</p>
+      <p><strong>Duration:</strong> Per Night</p>
+      <p><strong>Price:</strong> $120</p>
+      <button>Book Now</button>
+    </div>
+
+    <div class="service-card">
+      <img src="img/Fine Dining.jpeg" alt="Fine Dining">
+      <h2>Fine Dining</h2>
+      <p>Indulge in our world-class dining experience featuring local and international cuisines.</p>
+      <p><strong>Duration:</strong> Per Meal</p>
+      <p><strong>Price:</strong> $25 - $80</p>
+      <button>Reserve Table</button>
+    </div>
+
+    <div class="service-card">
+      <img src="img/Spa & Wellness.jpeg" alt="Spa & Wellness">
+      <h2>Spa & Wellness</h2>
+      <p>Relax with our professional spa, massage, and wellness treatments designed for your rejuvenation.</p>
+      <p><strong>Duration:</strong> 1 - 2 Hours</p>
+      <p><strong>Price:</strong> $50</p>
+      <button>Book Session</button>
+    </div>
+
+    <div class="service-card">
+      <img src="img/Conference Halls.jpeg" alt="Conference Halls">
+      <h2>Conference & Events</h2>
+      <p>Host your meetings, conferences, and special events in our fully equipped halls.</p>
+      <p><strong>Duration:</strong> Half Day / Full Day</p>
+      <p><strong>Price:</strong> From $200</p>
+      <button>Inquire Now</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Green Valley Hotel. All rights reserved.</p>
+  </footer>
+</body>
+</html>
